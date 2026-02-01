@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+TG2KSite/
+│
+├── welcome.html                # Home / Welcome page
+├── games.html                  # Non‑Flowlab games, projects & ROM hacks
+├── fllinks.html                # Flowlab game links
+├── images.html                 # Personal image gallery
+│
+=======
 ├── TG2KSite/
 │    ├── welcome.html           # Home / Welcome page
 │    ├── games.html             # Non‑Flowlab games, projects & ROM hacks
@@ -8,6 +17,7 @@
 │     ├── gonzalesgame.html           # gonzalesgame embed
 │ 
 │ 
+>>>>>>> kingkongedit-v2
 ├── /files                      # Game & project downloads
 │     ├── Needlemouse Return to Tokyo (REV01).bin
 │     ├── NES Message.nes
@@ -57,10 +67,14 @@
 │     ├── games.css             # games.html styles
 │     ├── images.css            # images.html styles
 │     ├── fllinks.css           # fllinks.html styles
+<<<<<<< HEAD
+│
+=======
 │     ├── gonzalesgame.css      # gonzalesgame.html styles
 │
 │
 │     
+>>>>>>> kingkongedit-v2
 ├── /thumbnail_fllinks           # Flowlab link thumbnails
 │     ├── dino.png
 │     ├── flappy.png
