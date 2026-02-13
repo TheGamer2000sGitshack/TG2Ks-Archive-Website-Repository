@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+</head>
+<body>
+
+<div class="top-controls">
+    <a href="index.html" class="home-btn" title="Back to Home">←</a>
+
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+        <span id="themeIcon">🌙</span>
+    </button>
+</div>
+
+<h1>Photo Gallery</h1>
+<p>Below are samples of my photography. Feel free to take a gander at them!</p>
+
+<div class="gallery">
+    <img src="Gallery photos only/ArtPlants.jpg" alt="ArtPlants">
+    <img src="Gallery photos only/Balloon.JPG" alt="Balloon">
+    <img src="Gallery photos only/BoardWalk.jpg" alt="BoardWalk">
+    <img src="Gallery photos only/BK.jpg" alt="BK">
+    <img src="Gallery photos only/BoatLaunch.jpg" alt="Boat Launch">
+    <img src="Gallery photos only/Boston.jpg" alt="Boston">
+    <img src="Gallery photos only/CCST.jpg" alt="CCST">
+    <img src="Gallery photos only/CerBBG.png" alt="CerBBG">
+    <img src="Gallery photos only/Clutter.jpg" alt="Clutter">
+    <img src="Gallery photos only/Dawn.jpg" alt="Dawn">
+    <img src="Gallery photos only/Elk.jpg" alt="Elk">
+    <img src="Gallery photos only/FairHill.jpg" alt="Fair Hill">
+    <img src="Gallery photos only/Glass.jpg" alt="Glass">
+    <img src="Gallery photos only/Harvard.jpg" alt="Harvard">
+    <img src="Gallery photos only/Lights.JPG" alt="Lights">
+    <img src="Gallery photos only/Macro.JPG" alt="Macro">
+    <img src="Gallery photos only/Mall.jpg" alt="Mall">
+    <img src="Gallery photos only/MIT.jpg" alt="MIT">
+    <img src="Gallery photos only/NewarkDE.jpg" alt="Newark DE">
+    <img src="Gallery photos only/NorthEast.jpg" alt="North East">
+    <img src="Gallery photos only/Phone.JPG" alt="Phone">
+    <img src="Gallery photos only/Playground.jpg" alt="Playground">
+    <img src="Gallery photos only/Sky.jpg" alt="Sky">
+    <img src="Gallery photos only/Stairs.jpg" alt="Stairs">
+    <img src="Gallery photos only/Trees.jpg" alt="Trees">
+    <img src="Gallery photos only/UD.jpg" alt="UD">
+    <img src="Gallery photos only/Utensils.png" alt="Utensils">
+    <img src="Gallery photos only/Woods.jpg" alt="Woods">
+    <img src="Gallery photos only/Colonnade.jpg" alt="Colonnade">
+    <img src="Gallery photos only/Tank.jpg" alt="Tank">
+</div>
+
+
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <button class="slideshow-btn" id="slideshowBtn">▶</button>
+    <span id="closeLightbox">&times;</span>
+
+    <div class="lightbox-nav prev" id="prevBtn">❮</div>
+    <img id="lightboxImg">
+    <div class="lightbox-nav next" id="nextBtn">❯</div>
+
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+    <div class="thumbnail-strip" id="thumbnailStrip"></div>
+</div>
+
+<script src="js/gallery.js"></script>
+</body>
+</html>
