@@ -45,7 +45,7 @@ body {
 /* Cartridge header stays centered */
 .cartridge-header {
   width: 100%;
-  background: rgba(166, 8, 26, 0.4);
+  background: rgba(126, 203, 255, 0.4);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 
