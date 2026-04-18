@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const counter = document.createElement("div");
     counter.className = "download-counter";
-    counter.textContent = `Total Downloadable Projects: ${count}`;
+    counter.textContent = `Available Titles: ${count}`;
 
     // Attach to the root of the document, not inside body animations
     document.documentElement.appendChild(counter);
