@@ -42,6 +42,17 @@ document.querySelectorAll(".main-nav a").forEach(btn => {
     });
 });
 
+
+// delete after 
+function openPopup() {
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+
 // Optional: hover sound effect
 // Add your sound file in /sounds/hover.mp3
 /* and use the code below to enable it 
