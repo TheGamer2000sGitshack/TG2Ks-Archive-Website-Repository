@@ -1,0 +1,163 @@
+/* ===== BASE + BACKGROUND ===== */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: linear-gradient(90deg, #00ffa6, #00c8ff, #0077ff);
+    background-size: 300% 300%;
+    animation: gradientMove 6s ease infinite;
+    text-align: center;
+}
+
+/* Background gradient animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Generic fade-in for glass panels */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Optional fade-out utility (if used in JS) */
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+
+/* ===== GLASSMORPHISM PANELS ===== */
+
+.hero,
+nav,
+footer,
+.logo {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    animation: fadeIn 0.8s ease forwards;
+}
+
+
+/* ===== NAVIGATION ===== */
+
+.main-nav {
+    margin-top: 30px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 420px;
+}
+
+/* Button base + glass + neumorphism */
+.main-nav a {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #222;
+
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 14px;
+
+    box-shadow:
+        6px 6px 14px rgba(0,0,0,0.15),
+        -6px -6px 14px rgba(255,255,255,0.6);
+
+    transition: all 0.25s ease;
+}
+
+/* Icon styling */
+.main-nav a i {
+    font-size: 22px;
+    color: #0a4f52;
+    transition: 0.25s ease;
+}
+
+/* Hover effects */
+.main-nav a:hover {
+    transform: translateY(-4px) scale(1.02);
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow:
+        4px 4px 10px rgba(0,0,0,0.18),
+        -4px -4px 10px rgba(255,255,255,0.7);
+}
+
+.main-nav a:hover i {
+    transform: scale(1.15);
+}
+
+/* Pressed state */
+.main-nav a:active {
+    transform: scale(0.98);
+    box-shadow:
+        inset 3px 3px 8px rgba(0,0,0,0.2),
+        inset -3px -3px 8px rgba(255,255,255,0.6);
+}
+
+
+/* ===== RIPPLE EFFECT ===== */
+
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.5s ease, opacity 0.6s ease;
+    left: var(--ripple-x);
+    top: var(--ripple-y);
+}
+
+.main-nav a:hover::after {
+    transform: scale(18);
+    opacity: 0.15;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 600px) {
+    .main-nav ul {
+        max-width: 90%;
+    }
+
+    .main-nav a {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .main-nav a i {
+        font-size: 20px;
+    }
+}
