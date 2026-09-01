@@ -150,3 +150,7 @@ galleryImages.forEach(img => {
     link.href = `Gallery photos only/${img}`;
     document.head.appendChild(link);
 });
+
+document.querySelector('.page-back').addEventListener('click', () => {
+  history.back();
+});
