@@ -152,5 +152,5 @@ galleryImages.forEach(img => {
 });
 
 document.querySelector('.page-back').addEventListener('click', () => {
-  history.back();
+  window.location.href = "index.html";
 });
