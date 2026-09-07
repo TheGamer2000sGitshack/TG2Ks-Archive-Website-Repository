@@ -1,15 +1,17 @@
-- Add new pictures to photo gallery
+- Add new pictures to photo gallery (TG2000)
 - Rebuild the W.E.L.K. Media page (W.E.L.K. Tube)
 - Release the Sonic Nightmare downloadable page upon demo release
 - Create a page for external links 
 - Create a page for miscellaneous projects
 - Create a page for video productions (Not W.E.L.K. Media)
-- Add more Flowlab games to the Flowlab Games page
+- Add more Flowlab games to the Flowlab Games page (TG2000)
 - Add an easter egg somewhere on the site that transports you to the W.E.L.K. Media page
 - Figure out why the file size isn't showing up in the Thirsty for Milk downloadable page
 - Try to optimize the Photo Gallery to prevent lag
 - Fix some of the pictures in the Photo Gallery being rotated incorrectly (on its side)
-- Rename the pictures in the Photo Gallery (Alt Text)
+- Rename the pictures in the Photo Gallery (Alt Text) (TG2000)
+- Figure out how to prevent pushing/pulling commits from clashing
+- Fix the GHM3 page (it's not loading correctly for some reason)
 
-Last updated: 9/7/2026 @ 13:39 EST
+Last updated: 9/7/2026 @ 15:28 EST
 Remove items when resolved
