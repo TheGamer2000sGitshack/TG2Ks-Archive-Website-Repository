@@ -25,6 +25,23 @@ document.addEventListener("keydown", function (e) {
     }
 });
 
+const creditsBox = document.querySelector('.credits-box');
+const creditsInner = document.querySelector('.credits-inner');
+const moreBtn = document.getElementById('moreBtn');
+const btnText = moreBtn.querySelector('.btn-text');
+
+moreBtn.addEventListener('click', () => {
+    creditsBox.classList.toggle('expanded');
+
+    if (creditsBox.classList.contains('expanded')) {
+        btnText.textContent = "Less";
+        creditsBox.appendChild(moreBtn);   // move button to bottom
+    } else {
+        btnText.textContent = "More";
+        creditsBox.insertBefore(moreBtn, creditsInner); // move button to top
+    }
+});
+
 function disableUI() {
     // Disable download button
     downloadBtn.classList.add("disabled");
