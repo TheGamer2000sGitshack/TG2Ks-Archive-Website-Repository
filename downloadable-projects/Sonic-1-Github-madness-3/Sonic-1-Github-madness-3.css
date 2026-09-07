@@ -165,12 +165,43 @@ option{
   background-color: rgb(0, 0, 0);
   border-color: rgba(255, 255, 255, 0);
 }
+
 .credits-box {
-  width: 572px;
-  margin: 0 auto;
-  height: 1150px;
-  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  max-height: 300px;
+  transition: max-height 0.4s ease;
   background: rgb(36, 58, 78);
+}
+
+.credits-box.expanded {
+  max-height: 2000px;
+}
+
+.more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 140px;
+  margin: 20px auto;
+  padding: 10px 18px;
+  background: rgba(74,187,111,1);
+  color: #000;
+  border-radius: 12px;
+  border: 2px solid #284157;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+.btn-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.credits-box.expanded .btn-icon {
+  transform: rotate(180deg);
 }
 
 .credits-box h2 {
