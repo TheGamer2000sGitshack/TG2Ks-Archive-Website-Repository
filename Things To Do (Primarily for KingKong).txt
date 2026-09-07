@@ -6,5 +6,10 @@
 - Create a page for video productions (Not W.E.L.K. Media)
 - Add more Flowlab games to the Flowlab Games page
 - Add an easter egg somewhere on the site that transports you to the W.E.L.K. Media page
+- Figure out why the file size isn't showing up in the Thirsty for Milk downloadable page
+- Try to optimize the Photo Gallery to prevent lag
+- Fix some of the pictures in the Photo Gallery being rotated incorrectly (on its side)
+- Rename the pictures in the Photo Gallery (Alt Text)
 
-Last updated: 9/7/2026 @ 13:30 EST
+Last updated: 9/7/2026 @ 13:39 EST
+Remove items when resolved
