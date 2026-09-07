@@ -11,7 +11,6 @@
 - Fix some of the pictures in the Photo Gallery being rotated incorrectly (on its side)
 - Rename the pictures in the Photo Gallery (Alt Text) (TG2000)
 - Figure out how to prevent pushing/pulling commits from clashing
-- Fix the GHM3 page (it's not loading correctly for some reason)
 
-Last updated: 9/7/2026 @ 15:28 EST
+Last updated: 9/7/2026 @ 16:21 EST
 Remove items when resolved
