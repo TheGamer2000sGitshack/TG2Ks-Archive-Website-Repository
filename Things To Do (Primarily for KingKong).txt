@@ -1,4 +1,4 @@
-- Add new pictures to photo gallery (TG2000)
+- Implement new pictures to photo gallery
 - Rebuild the W.E.L.K. Media page (W.E.L.K. Tube)
 - Release the Sonic Nightmare downloadable page upon demo release
 - Create a page for external links 
@@ -15,5 +15,5 @@
 - Perform a graphical overhaul of the Change PaaS page (the OG page has been preserved)
 - Create a folder for music tracks (TG2000)
 
-Last updated: 9/7/2026 @ 18:11 EST
+Last updated: 9/7/2026 @ 19:00 EST
 Remove items when resolved
