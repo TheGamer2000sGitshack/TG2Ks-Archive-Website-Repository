@@ -13,6 +13,8 @@
 - Figure out how to prevent pushing/pulling commits from clashing
 - Create a "Music Box" page that contains my best tracks (like a playlist)
 - Perform a graphical overhaul of the Change PaaS page (the OG page has been preserved)
+- Change HamiXD in GHM4 credits to HameXD (Mistake) (TG2000)
+- Create a folder for music tracks (TG2000)
 
-Last updated: 9/7/2026 @ 17:34 EST
+Last updated: 9/7/2026 @ 18:02 EST
 Remove items when resolved
