@@ -10,6 +10,7 @@ function displayTimer() {
   miliseconds=0, seconds='00',
   time = '',
   timeNow = new Date().getTime(); // timestamp (miliseconds)
+    document.getElementById('clear').style.display="inline";
 
   T.difference = timeNow - T.timerStarted;
 
@@ -77,7 +78,7 @@ function startTimer() {
   // show / hide the relevant buttons:
   document.getElementById('go').style.display="none";
   document.getElementById('stop').style.display="inline";
-  document.getElementById('clear').style.display="none";
+
 }
 
 function stopTimer() {
@@ -95,7 +96,7 @@ function clearTimer() {
 
   document.getElementById('stop').style.display="none";
   document.getElementById('go').style.display="inline";
-  document.getElementById('clear').style.display="none";
+  document.getElementById('clear').style.display="inline";
 }
 
  // Code is built on Ramprasad Manna's open source stopwatch-timer code.
