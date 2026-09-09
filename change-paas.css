@@ -1,0 +1,391 @@
+/* Page layout */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(#B6CFFF, #9adaf5);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Header */
+.page-header {
+  text-align: center;
+  padding: 40px 0;
+  color:#1C4587;
+  
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 11rem;
+  font-weight: 900;
+  color:#1C4587;
+  font-family: 'Impact';
+  font-weight: bold;
+}
+
+.page-header p {
+  margin-top: 20px;
+  font-size: 32px;
+  font-family: ' Adhesian', Expanded, Slanted;
+  font-weight: bold;
+}
+
+.content {
+  height: 100%;
+  padding: 20px;
+}
+
+/* Pole + signs */
+.button-pole {
+  position: fixed;
+  bottom: 80px;
+  left: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.pole {
+  position: absolute;
+  left: 22rem;
+  bottom: -6rem;
+  width: 32px;
+  height: 34rem;
+  background: #632500;
+  border: 5px solid #3C0000;
+  border-radius: 14px;
+  box-shadow: 5px 5px 0px #00000040;
+  transform: rotate(-4.5deg);
+  z-index: 0;
+}
+
+.button-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 140px;
+  z-index: 1;
+}
+
+.wood-sign {
+  background: linear-gradient(
+    to bottom,
+    #713007 0%,
+    #B56839 50%,
+    #713007 100%
+  );
+  border: 6px solid #3C0000;
+  border-radius: 10px;
+  padding: 26px 40px;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #3C0000;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 6px 6px 0px #00000040;
+  position: relative;
+  width: 360px;
+}
+
+.wood-sign:hover {
+ 
+  box-shadow: 8px 8px 0px #00000040;
+}
+
+.cloud {
+  position: fixed;
+  bottom: -19rem;
+  right: -18rem;
+  width: 1400px; /* container stays normal */
+  height: auto;
+  
+}
+
+/* The actual cloud image */
+.cloud-img {
+  width: 100%;      /* makes the cloud image bigger */
+  height: 100%;     /* keeps proportions perfect */
+  
+}
+
+/* Text inside the cloud */
+
+.cloud-text {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 70%;
+
+  font-size: 28px;   /* bigger text */
+  line-height: 1.4;
+}
+
+.cloud-text h2 {
+  font-size: 85px;   /* bigger heading */
+  margin: 0 0 10px 0;
+  font-family: 'Landslide', bold;
+  font-style: italic;
+  color: #414141;
+  text-align: center;
+}
+
+.cloud-text ul {
+  margin: 10px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cloud-text li {
+  font-size: 26px;   /* bigger list text */
+  margin-bottom: 10px;
+  margin-left: 13rem;
+}
+
+
+.status-icon {
+  font-size: 32px;   
+  margin-right: 10px;
+  color: #414141;;
+  
+}
+
+.status-text1 {
+  font-size: 36px;  
+  color: #414141;
+  font-family: 'Landslide', bold;
+}
+.status-ok {
+  color: green;
+  font-size: 36px;  
+  font-family: 'Landslide', bold;
+}
+
+.status-bad {
+  color: red;
+  font-size: 36px;  
+  font-family: 'Landslide', bold;
+}
+
+.status-bad-br{
+  display: inline-block; 
+  margin-left: 1.5rem;  
+}
+.version-note {
+  font-size: 20px;   /* bigger version note */
+  margin-top: 12px;
+  color: #414141;
+  text-align: center;
+  font-family: 'Landslide', bold;
+}
+
+.version-number{
+    color:#000000;
+    font-family: 'Landslide', bold;
+}
+
+
+/* for moblie */
+
+@media (max-width: 900px) {
+
+  /* Hide cloud on mobile */
+  .cloud {
+    display: none;
+  }
+
+  /* Mobile header adjustments */
+  .page-header {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .page-header h1 {
+    font-size: 6rem;   /* smaller but still bold */
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header p {
+    font-size: 1.2rem;
+  }
+
+  .pole {
+   display: none;  /* Hide the pole on mobile */
+  }
+
+  /* Center signs */
+  .button-pole {
+    left: 50%;
+    bottom: 29rem;
+    transform: translateX(-50%);
+  }
+
+  .button-stack {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .wood-sign {
+    width: 18rem;
+    font-size: 1.4rem;
+    transform: rotate(0deg);
+    position: relative;
+    padding-left: 3rem;   /* space for left dot */
+  }
+
+  /* Bigger dots on the LEFT */
+  .wood-sign::before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.6rem;        /* bigger dot */
+    height: 1.6rem;       /* bigger dot */
+    border-radius: 50%;
+  }
+
+  /* Green = good */
+  .status-ok-sign::before {
+    background: #2ecc71;
+  }
+
+  /* Red = bad */
+  .status-bad-sign::before {
+    background: #e74c3c;
+  }
+}
+
+/* Mobile landscape mode */
+@media (orientation: landscape) and (max-height: 600px) {
+
+  /* Hide cloud */
+  .cloud {
+    display: none;
+  }
+
+  /* Header smaller */
+  .page-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .page-header p {
+    font-size: 1rem;
+  }
+
+  /* Center signs but move UP because landscape is short */
+  .button-pole {
+    left: 50%;
+    bottom: 5rem;
+    transform: translateX(-50%);
+  }
+
+  .pole {
+   display: none;  /* Hide the pole on mobile */
+  }
+
+  .button-stack {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .wood-sign {
+    width: 16rem;
+    font-size: 1.2rem;
+    transform: rotate(0deg);
+    position: relative;
+    padding-left: 3rem; /* space for dot */
+  }
+
+  /* Bigger dots on the LEFT */
+  .wood-sign::before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+  }
+
+  .status-ok-sign::before {
+    background: #2ecc71;
+  }
+
+  .status-bad-sign::before {
+    background: #e74c3c;
+  }
+}
+
+/* Desktop/laptop special layout at ~1686x958 */
+@media (max-width: 1680px) and (max-height: 950px) {
+
+  /* Hide cloud */
+  .cloud {
+    display: none;
+  }
+
+  /* Header smaller */
+  .page-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .page-header p {
+    font-size: 1rem;
+  }
+
+  /* Center signs but move UP because landscape is short */
+  .button-pole {
+    left: 50%;
+    bottom: 5rem;
+    transform: translateX(-50%);
+  }
+
+  .pole {
+   display: none;  /* Hide the pole on mobile */
+  }
+
+  .button-stack {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .wood-sign {
+    width: 16rem;
+    font-size: 1.2rem;
+    transform: rotate(0deg);
+    position: relative;
+    padding-left: 3rem; /* space for dot */
+  }
+
+  /* Bigger dots on the LEFT */
+  .wood-sign::before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+  }
+
+  .status-ok-sign::before {
+    background: #2ecc71;
+  }
+
+  .status-bad-sign::before {
+    background: #e74c3c;
+  }
+}
+
+
