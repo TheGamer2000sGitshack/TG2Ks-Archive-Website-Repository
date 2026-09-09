@@ -9,11 +9,12 @@
 - Figure out why the file size isn't showing up in the Thirsty for Milk downloadable page
 - Try to optimize the Photo Gallery to prevent lag
 - Fix some of the pictures in the Photo Gallery being rotated incorrectly (on its side)
-- Rename the pictures in the Photo Gallery (Alt Text) (TG2000)
 - Figure out how to prevent pushing/pulling commits from clashing
 - Create a "Music Box" page that contains my best tracks (like a playlist)
 - Perform a graphical overhaul of the Change PaaS page (the OG page has been preserved)
 - Create a folder for music tracks (TG2000)
+- Reverse-engineer the stopwatch and make it a timer
+- Make the stopwatch stay in place even when zooming the page in and out (it currently moves out of alignment)
 
-Last updated: 9/7/2026 @ 19:00 EST
+Last updated: 9/9/2026 @ 13:16 EST
 Remove items when resolved
